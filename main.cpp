@@ -245,7 +245,7 @@ int main(int argc, char* argv[]) {
 		cout << argc << "\n";
 		pid = fork(); 
 		if(pid==0){
-			cout << "sibal";
+			//cout << "check\n";
 			Ip senderIp = Ip(static_cast<std::string>(argv[2*i+2]));
 			Mac senderMac = getMacByIp(myIp, myMac, senderIp, handle);
 			Ip targetIp = Ip(static_cast<std::string>(argv[2*i+3])); 
